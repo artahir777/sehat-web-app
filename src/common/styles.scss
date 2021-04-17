@@ -1,0 +1,38 @@
+@font-face{
+    font-family: 'Exo';
+    src: url(Exo-VariableFont_wght.ttf);
+}
+
+*{
+    box-sizing: border-box;
+}
+
+.backToMain{
+    display: inline-block;
+    font-size: 16px;
+    text-shadow: 2px;
+    margin: 5px;
+    padding: 10px;
+    background-color: #ccaabb;
+}
+
+.backToMain:hover{
+    color: #aaaaaa;
+}
+
+body{
+    a{
+        text-decoration: none;
+    }
+
+    a:visited{
+        color: initial;
+    }
+    
+
+    font-family: 'Exo';
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+

@@ -1,24 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import "antd/dist/antd.css"
+import { Route, BrowserRouter as Router, Switch } from 'react-router-dom';
+import Home from './pages/Home/Home';
+import Login from './pages/Login/Login';
+import Services from './pages/Services/Services';
+import Sidebar from './components/Sidebar/Sidebar';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      <Router>
+        <div className = "App" >
+          <Switch>
+            <Route path = "/sign-in" component = {Login} />
+            <Route path = "/services" component = {Services} />
+            <Route path = "/" component = {Home} />
+          </Switch>
+        </div>
+      </Router>
+      // <div>
+      //   <Sidebar/>
+      // </div>
   );
 }
 
