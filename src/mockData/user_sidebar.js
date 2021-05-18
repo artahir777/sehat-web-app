@@ -25,16 +25,6 @@ export const sidebar = [
         url: "/consult-now"
     },
     {
-        icon: "/images/icons/history.png",
-        title: "Medical History",
-        url: "/medical-history"
-    },
-    {
-        icon: "/images/icons/bookmark 1.png",
-        title: "Appointments",
-        url: "/appointments"
-    },
-    {
         icon: "/images/icons/stats 2.png",
         title: "Vitals",
         url: "vitals"

@@ -1,23 +1,28 @@
 const profile_sidebar = [
     {
         icon: "/images/icons/user with options.png",
-        title: "Personal Info."
+        title: "Personal Info.",
+        url: "/user-personal-info"
     },
     {
         icon: "/images/icons/history.png",
-        title: "Medical History"
+        title: "Medical History",
+        url: "/medical-history"
     },
     {
         icon: "/images/icons/medical files.png",
-        title: "Prescriptions"
+        title: "Prescriptions",
+        url: "/user-prescriptions"
     },
     {
         icon: "/images/icons/bookmark 1.png",
-        title: "My Appointments"
+        title: "My Appointments",
+        url: "/appointments"
     },
     {
         icon: "/images/icons/tools.png",
-        title: "Settings"
+        title: "Settings",
+        url: "/user-settings"
     }
 ];
 

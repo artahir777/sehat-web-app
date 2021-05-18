@@ -6,7 +6,7 @@ import NavbarStyle from './NavbarStyle';
 const Navbar = () => {
     return ( 
         <NavbarStyle>
-                    <div className = "Navbar">
+            <div className = "Navbar">
                 <div className = "logo" >
                     {/* <Link to = "/" > <img src = "/images/logo.png" alt = "Site logo"  /> </Link> */}
                     <img src = "/images/logo.png" alt = "Site logo"  />

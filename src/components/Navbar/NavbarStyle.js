@@ -2,9 +2,9 @@ import styled from "styled-components";
 
 const NavbarStyle = styled.div`
     .Navbar{
+    height: 80px;
     display: flex;
     justify-content: space-between;
-
     .logo{
         display: flex;
         flex-direction: row;
@@ -15,7 +15,7 @@ const NavbarStyle = styled.div`
         }
         img{
             padding: 10px;
-            width: 100px;
+            width: 80px;
             height: auto;
         }
     }
@@ -26,9 +26,6 @@ const NavbarStyle = styled.div`
             color: #f1f1f1;
         }
 
-        a:visited{
-            color: initial;
-        }
 
         ul{
             height: 50px;
