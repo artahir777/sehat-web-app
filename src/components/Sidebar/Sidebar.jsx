@@ -4,18 +4,14 @@ import SidebarStyle from './SidebarStyle';
 import { withRouter } from 'react-router';
 import { Link } from 'react-router-dom';
 import { Tooltip } from 'antd';
+import { ArrowLeftOutlined } from '@ant-design/icons';
 
 const Sidebar = (props) => {
-
-    const [collapsed, setCollapsed] = useState(false);
-    const toggleCollapsed = () => {
-        setCollapsed(!collapsed);
-    }
-
 
     return (
         <SidebarStyle size = {props.size} >
             <div className = "sidebar" >
+                
                 <ul>
                     {
                         props.values.map((item, index) => {

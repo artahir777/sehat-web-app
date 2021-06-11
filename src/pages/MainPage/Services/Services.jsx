@@ -16,7 +16,7 @@ const Services = () => {
                             services.map( (item, index) => {
                                 return (
                                     <Card
-                                    imgSize = "mid"
+                                    imgSize = "small"
                                     image = {<img src = {item.imgUrl} />}
                                     title = { <h3> {item.title} </h3> }
                                     actions = { <a> Learn More </a> }

@@ -16,12 +16,11 @@ const CardStyle = styled.div`
         
         box-sizing: border-box;
         display: flex;
-        flex-direction: column;
+        flex-direction: ${props => props.type === "horizontal" ? "row" : "column"};
         margin: 10px;
         justify-content: space-evenly;
         text-align: center;
         border: 1px solid #dddddd;
-        border-radius: 5px;
         padding: 10px;
         .image{
             img{
@@ -29,6 +28,22 @@ const CardStyle = styled.div`
                 height: auto;
             }
         }
+        .header .more-info {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-evenly;
+        }
+        .actions {
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+        }
+    }
+    .card:hover{
+        border: none;
+        box-shadow: #eeeeee 3px 3px 5px 5px;
+        transition: 0.3s;
     }
 `;
 

@@ -1,9 +1,11 @@
-import { LogoutOutlined, SettingOutlined } from '@ant-design/icons';
+import { LeftOutlined, LogoutOutlined, SettingOutlined } from '@ant-design/icons';
 import { Affix, Dropdown, Menu } from 'antd';
 import Avatar from 'antd/lib/avatar/avatar';
 import React from 'react'
-import { Link } from 'react-router-dom';
+import { Link, useHistory } from 'react-router-dom';
+import IconButton from '../../components/IconButton/IconButton';
 import Searchbar from '../../components/Searchbar/Searchbar';
+import SectionHeading from '../../components/SectionHeading/SectionHeading';
 import Sidebar from '../../components/Sidebar/Sidebar';
 import admin_sidebar_min from '../../mockData/admin_sidebar_min';
 import AdminLayoutStyle from './AdminLayoutStyle';
@@ -22,10 +24,16 @@ const menu = (
 
 const AdminLayout = (props) => {
 
+    const history = useHistory();
+
+    const goBack = () => {
+        history.goBack();
+    }
+
     return (
         <AdminLayoutStyle>
             <Affix offsetTop = {0} >
-                <Searchbar>
+                <Searchbar color = "#6f5de3" textColor = "white" >
                     <Dropdown overlay = {menu} className = "profile" >
                         <Avatar icon = {<img src = "/images/color-icons/settings 4.png" />} />
                     </Dropdown>

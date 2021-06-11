@@ -9,6 +9,9 @@ const SidebarStyle = styled.div`
         height: 100vh;
         margin: 0px;
         background-color: rgba(50, 50, 50, 0.7);
+        .top-btn{
+            padding: 20px auto;
+        }
         li:hover{
             background-color:rgba(30, 30, 30, 0.5);
         }

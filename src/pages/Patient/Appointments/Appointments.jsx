@@ -36,13 +36,14 @@ const Appointments = (props) => {
             title: "Actions",
             key: "actions",
             dataIndex: "actions",
-            render: () => (
+            render: (t, record) => (
                 <>
                     {
                         <div className = "action-buttons" >
                             <Button style = {{margin: "10px"}} > <MedicineBoxOutlined/> View Dr. Profile </Button>
                             <Button style = {{margin: "10px"}} > <DeleteOutlined/> Delete </Button>
-                            <Button style = {{margin: "10px"}} onClick = {showModal} > <ProfileOutlined /> View </Button>
+                            <Button style = {{margin: "10px"}} >
+                                 <ProfileOutlined /> View </Button>
                         </div>
                     }
                 </>
@@ -97,7 +98,8 @@ const Appointments = (props) => {
                         </Tabs>
                     </div>
                 </div>
-                <Modal title="Basic Modal" visible={isModalVisible} onOk={handleOk} onCancel={handleCancel} >
+                <Modal title="Appointment Details" 
+                visible={isModalVisible} onOk={handleOk} onCancel={handleCancel} >
                     some content
                 </Modal>
             </AppointmentsStyle>

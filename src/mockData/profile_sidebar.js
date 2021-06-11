@@ -1,8 +1,8 @@
 const profile_sidebar = [
     {
-        icon: "/images/icons/user with options.png",
-        title: "Personal Info.",
-        url: "/user-personal-info"
+        icon: "/images/icons/home 1.png",
+        title: "Home",
+        url: "/user-dashboard"
     },
     {
         icon: "/images/icons/history.png",

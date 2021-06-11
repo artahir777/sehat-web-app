@@ -5,7 +5,7 @@ const appointments_list = [
     {
         key: "1",
         id: 1,
-        date: "Wednesday",
+        date: "Wednesday 1",
         drName: "Dr. John",
         type: "Online",
 
@@ -13,15 +13,15 @@ const appointments_list = [
     {
         key: "2",
         id: 2,
-        date: "Wednesday",
+        date: "Wednesday 2",
         drName: "Dr. John",
-        type: "Online",
+        type: "On Clinic",
 
     },
     {
         key: "3",
         id: 3,
-        date: "Wednesday",
+        date: "Thursday",
         drName: "Dr. John",
         type: "Online",
 
@@ -29,23 +29,23 @@ const appointments_list = [
     {
         key: "4",
         id: 4,
-        date: "Wednesday",
-        drName: "Dr. John",
+        date: "Friday",
+        drName: "Dr. Kane",
         type: "Online",
 
     },
     {
         key: "5",
         id: 5,
-        date: "Wednesday",
+        date: "Sunday",
         drName: "Dr. John",
-        type: "Online",
+        type: "On Clinic",
 
     },
     {
         key: "6",
         id: 6,
-        date: "Wednesday",
+        date: "Monday",
         drName: "Dr. John",
         type: "Online",
 
@@ -62,7 +62,7 @@ const appointments_list = [
         key: "8",
         id: 8,
         date: "Wednesday",
-        drName: "Dr. John",
+        drName: "Dr. Ave",
         type: "Online",
 
     },
@@ -70,8 +70,8 @@ const appointments_list = [
         key: "9",
         id: 9,
         date: "Wednesday",
-        drName: "Dr. John",
-        type: "Online",
+        drName: "Dr. Doe",
+        type: "On Clinic",
 
     },
 

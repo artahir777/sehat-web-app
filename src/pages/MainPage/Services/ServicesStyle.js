@@ -5,7 +5,7 @@ const ServicesStyle = styled.div`
         /* border: 1px solid #aaaaaa;
         border-radius: 5px; */
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(4, 1fr);
         grid-gap: 20px;
     }
 `;

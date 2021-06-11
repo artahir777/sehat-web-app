@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 const VitalsStyle = styled.div`
     .vitals{
-        .back-button{
+        .back-button, .edit-button{
             margin: 10px;
         }
         .vitals-grid{

@@ -2,10 +2,6 @@ import styled from "styled-components";
 
 const PersonalInfoStyle = styled.div`
     .personal-info{
-        .back-button{
-            margin: 10px;
-            align-self: left;
-        }
         .info-table{
             border: 1px solid #dddddd;
             margin: 20px;

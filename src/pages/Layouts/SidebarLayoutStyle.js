@@ -2,16 +2,22 @@ import styled from "styled-components";
 
 const SidebarLayoutStyle = styled.div`
     .container{
-        display: grid;
-        grid-template-columns: 1fr 5fr;
+        display: flex;
+        flex-direction: column;
+        .top-navbar{
+                background-color: #eeeeee;
+                position: fixed;
+                top: 0;
+                width: 100%;
+                z-index: 1;
+                display: grid;
+                grid-template-columns: 1fr 12fr;
+                .sidebar{
+                    margin: 20px auto;
+                }
+            }
         .content{
-            display: flex;
-            flex-direction: column;
-        }
-        .avatar{
-            margin: 20px;
-            flex-grow: 1;
-            max-width: 200px;
+            margin-top: 100px;
         }
     }
 `;

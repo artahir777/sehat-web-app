@@ -14,6 +14,7 @@ const setSize = (size) => {
 const ButtonStyle = styled.div`
 
     .button{
+        display: inline-block;
         margin: 5px;
         padding: ${ props => setSize(props.size) };
         color: ${props => props.colors.color };
@@ -26,6 +27,7 @@ const ButtonStyle = styled.div`
         background-color: ${ props => props.colors.color };
         border: 1px solid ${ props => props.bgColor };
         cursor: pointer;
+        transition: 0.3s;
     }
 
 `;

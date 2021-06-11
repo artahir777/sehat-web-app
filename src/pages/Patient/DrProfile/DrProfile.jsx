@@ -4,7 +4,7 @@ import SidebarLayout from '../../Layouts/SidebarLayout';
 import DrProfileStyle from './DrProfileStyle';
 import user_sidebar from "../../../mockData/user_sidebar"
 import IconButton from '../../../components/IconButton/IconButton';
-import { ArrowLeftOutlined, BookOutlined, CheckCircleTwoTone, CheckOutlined, HeartOutlined, HomeOutlined, PhoneOutlined } from '@ant-design/icons';
+import { ArrowLeftOutlined, BookOutlined, CheckCircleTwoTone, CheckOutlined, ClockCircleOutlined, CloseOutlined, HeartOutlined, HomeOutlined, PhoneOutlined } from '@ant-design/icons';
 import DataTable from '../../../components/DataTable/DataTable';
 import dr_edu_columns from '../../../mockData/dr_edu_columns';
 import dr_exp_columns from '../../../mockData/dr_exp_columns';
@@ -12,6 +12,7 @@ import dr_edu_data from '../../../mockData/dr_edu_data';
 import dr_exp_data from '../../../mockData/dr_exp_data';
 import Review from '../../../components/Review/Review';
 import Avatar from 'antd/lib/avatar/avatar';
+import Modal from 'antd/lib/modal/Modal';
 
 const {Panel} = Collapse;
 
@@ -70,6 +71,11 @@ const DrProfile = (props) => {
                         </div>
                     </div>
                 </div>
+            {/* This is the modal that will be shown when the user tries to book an appointment with the doctor. */}
+                <Modal title = "Book an Appointment" okText = { <> <ClockCircleOutlined/> Book Appointment </> }
+                cancelText = {<> <CloseOutlined/> Cancel </>} visible = {false} >
+
+                </Modal>
             </DrProfileStyle>
         </SidebarLayout>
     )

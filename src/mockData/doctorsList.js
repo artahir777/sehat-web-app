@@ -1,11 +1,4 @@
-const getFullDate = () => {
-    const days = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
-    const months = ["January", "February", "March", "April", "May", "June", "July", 
-    "August", "September", "October", "November", "December"];
-    let d = new Date();
-    return String( days[d.getDay()] + ", " + months[d.getMonth()] + " " + d.getDate() + ", " + d.getFullYear() );
-}
-
+import {getFullDate} from "./date";
 const doctorsList = [
     {
         id: 1, dr_name: "John Doe", license_no: 11223344,  

@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 const SettingsStyle = styled.div`
     .settings{
+        
         .change-password{
             margin: 20px;
             .password-form{

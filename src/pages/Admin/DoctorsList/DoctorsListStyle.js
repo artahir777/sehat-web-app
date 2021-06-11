@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 const DoctorsListStyle = styled.div`
+    
     .doctors-list{
         .list{
             .options-bar{

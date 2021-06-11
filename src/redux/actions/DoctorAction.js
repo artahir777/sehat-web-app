@@ -1,6 +1,6 @@
 import * as ActionList from "./ActionsList";
 import SEHAT from "../../API/SEHAT";
-import { toast } from 'react-toastify';
+import { toast } from "react-toastify";
 
 const SUCCESS = (msg) => {
   return toast.success(msg, {
@@ -11,7 +11,7 @@ const SUCCESS = (msg) => {
     pauseOnHover: true,
     draggable: true,
     progress: undefined,
-    });
+  });
 };
 
 const ERROR = (msg) => {
@@ -23,7 +23,7 @@ const ERROR = (msg) => {
     pauseOnHover: true,
     draggable: true,
     progress: undefined,
-    });
+  });
 };
 
 export const INFORMATION = (payload) => ({
@@ -218,20 +218,26 @@ export const DOC_ADD_ONLINE_SCHEDULE = (data, callback) => {
   };
 };
 
+export const REVIEW = (payload) => ({
+  type: ActionList.REVIEW,
+  payload,
+});
+
 export const GET_DOC_REVIEW = (id, callback) => {
   return async (dispatch) => {
     await SEHAT.get(`/doctor/review/${id}`)
       .then((response) => {
-        dispatch(INFORMATION(response.data));
+        dispatch(REVIEW(response.data));
         callback();
       })
       .catch((error) => {
+        console.log(error);
         if (error.response) {
           ERROR(error.response.data.error);
         } else if (error.request) {
           ERROR("Bad Request!");
         } else {
-          ERROR("Network Error!");
+          ERROR(error.message);
         }
         callback();
       });
@@ -242,9 +248,8 @@ export const DOC_ADD_REVIEW = (data, callback) => {
   return async (dispatch) => {
     await SEHAT.post("/review/", data)
       .then((response) => {
-        dispatch(INFORMATION(response.data));
+        dispatch(GET_DOC_INFORMATION(data.id, callback));
         SUCCESS("Review Added Successful!");
-        callback();
       })
       .catch((error) => {
         if (error.response) {
@@ -402,3 +407,28 @@ export const STATUS = (payload) => ({
   type: ActionList.DOCTORS_STATUS,
   payload,
 });
+
+export const SPECIALTY = (payload) => ({
+  type: ActionList.CATEGORY_LIST,
+  payload,
+});
+
+export const GET_SPECIALTY = (id, callback) => {
+  return async (dispatch) => {
+    await SEHAT.get(`/doctor/specialty/` + id)
+      .then((response) => {
+        dispatch(SPECIALTY(response.data));
+        callback();
+      })
+      .catch((error) => {
+        if (error.response) {
+          ERROR(error.response.data.error);
+        } else if (error.request) {
+          ERROR("Bad Request!");
+        } else {
+          ERROR("Network Error!");
+        }
+        callback();
+      });
+  };
+};

@@ -1,10 +1,10 @@
 import { LogoutOutlined, SettingOutlined, UserOutlined } from '@ant-design/icons';
-import { Affix, Dropdown, Menu } from 'antd';
+import { Dropdown, Menu } from 'antd';
 import Avatar from 'antd/lib/avatar/avatar';
 import React from 'react'
 import { Link } from 'react-router-dom';
 import Searchbar from '../../components/Searchbar/Searchbar';
-import Sidebar from '../../components/Sidebar/Sidebar';
+import ToggleSidebar from '../../components/ToggleSidebar/ToggleSidebar';
 import SidebarLayoutStyle from './SidebarLayoutStyle';
 
 const menu = (
@@ -26,21 +26,22 @@ const menu = (
 const SidebarLayout = (props) => {
     return (
         <SidebarLayoutStyle>
-            <div className = "container" >
-                <Affix offsetTop = {0} > 
-                  <Sidebar values = {props.values} />
-                </Affix>
-                <div className="content">
-                    <Affix offsetTop = {0} >
-                    <Searchbar profilePic = "/images/color-icons/person.png" username = "John Doe" >
+            <div className = "container" > 
+              <div className = "top-navbar" >
+                  
+                  <ToggleSidebar className = "sidebar" values = {props.values} />
+                  
+                  <Searchbar profilePic = "/images/color-icons/person.png" username = "John Doe" >
                     <Dropdown overlay={menu} >
-                        <div>
+                      <div>
                         <Avatar icon = {<img src = "/images/color-icons/person.png" />} />
                         <span> Hello, John! </span>
-                        </div>
+                      </div>
                     </Dropdown>
-                    </Searchbar>
-                    </Affix>
+                  </Searchbar>
+                </div>
+                <div className="content">
+                    
                     {props.children}
                 </div>
             </div>

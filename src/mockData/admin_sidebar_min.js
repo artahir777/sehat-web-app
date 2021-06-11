@@ -25,11 +25,6 @@ const admin_sidebar_min = [
         tooltip: "Manage Files and Docs",
     },
     {
-        icon: "/images/color-icons/chart.png",
-        url: "/admin-dashboard/data-analytics",
-        tooltip: "Data Analytics",
-    },
-    {
         icon: "/images/color-icons/settings 2.png",
         url: "/admin-dashboard/settings",
         tooltip: "Settings",

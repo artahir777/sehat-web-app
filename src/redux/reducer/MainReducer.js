@@ -9,4 +9,5 @@ export default combineReducers({
   User: UserReducer,
   Doctor: DoctorReducer,
   Language: LanguageReducer,
+  
 });
