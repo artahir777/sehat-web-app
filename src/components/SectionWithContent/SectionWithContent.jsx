@@ -3,8 +3,8 @@ import SectionWithContentStyle from './SectionWithContentStyle';
 
 const SectionWithContent = (props) => {
     return (
-        <SectionWithContentStyle>
-            <div className="section">
+        <SectionWithContentStyle  >
+            <div className="section" id = {props.id} >
                 <div className="text">
                     <h3 className = "title" > {props.heading} </h3>
                     <p className = "subtitle" > {props.text} </p>

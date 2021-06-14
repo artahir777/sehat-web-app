@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 const FooterStyle = styled.div`
     .footer{
-        margin-top: 20px;
+        margin-top: 200px;
         display: flex;
         flex-direction: column;
         .footer-top{

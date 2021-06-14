@@ -15,7 +15,6 @@ const Navbar = () => {
                 <div className = "Navbar-Items" >
                     <ul>
                         <Link to = "/" > <li> Home </li> </Link>
-                        <Link to = "/services" > <li> Services </li> </Link>
                         <Link to = "/about" > <li> About Us </li> </Link>
                         <Link to = "/sign-in" > <li> Login </li> </Link>
                     </ul>

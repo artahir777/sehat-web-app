@@ -5,6 +5,7 @@ const NavbarStyle = styled.div`
     height: 80px;
     display: flex;
     justify-content: space-between;
+    box-shadow: 2px 2px 2px 2px #eeeeee;
     .logo{
         display: flex;
         flex-direction: row;
@@ -44,6 +45,24 @@ const NavbarStyle = styled.div`
         
     }
 
+    }
+    @media(max-width: 768px){
+        .Navbar{
+            .logo{
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                h1{
+                    font-size: 20px;
+                    margin: 0px 20px;
+                }
+                img{
+                    padding: 10px;
+                    width: 80px;
+                    height: auto;
+                }
+            }
+        }
     }
 `
 

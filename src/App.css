@@ -1,3 +1,21 @@
+@font-face{
+  font-family: 'Exo-Semi-Bold';
+  src: url(./common/Fonts/Exo-SemiBold.ttf);
+}
+
+@font-face{
+  font-family: 'Raleway';
+  src: url(./common/Fonts/Raleway-VariableFont_wght.ttf);
+}
+
+h1, h2, h3, h4, h5, h6{
+  font-family: 'Exo-Semi-Bold';
+}
+
+p, span{
+  font-family: 'Raleway';
+}
+
 *{
   box-sizing: border-box;
 }

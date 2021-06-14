@@ -13,7 +13,7 @@ const Login = () => {
         <NavbarLayout>
             <LoginStyle>
             <div className = "bg-image" ></div>
-            <div className = "tabs" >
+            <div className = "tabs" id ="form" >
                 <Tabs className = "form" defaultActiveKey="1" >
                     <TabPane tab="Login" key="1" >
                         <LoginForm/>

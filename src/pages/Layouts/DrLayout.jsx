@@ -1,5 +1,5 @@
 import { DownOutlined, LogoutOutlined, ProfileOutlined, SettingOutlined } from '@ant-design/icons'
-import { Dropdown, Menu, Tooltip } from 'antd'
+import { Affix, Dropdown, Menu, Tooltip } from 'antd'
 import Avatar from 'antd/lib/avatar/avatar'
 import React from 'react'
 import DrLayoutStyle from './DrLayoutStyle'

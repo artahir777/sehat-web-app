@@ -7,7 +7,6 @@ import { Route, BrowserRouter as Router, Switch } from 'react-router-dom';
 
 import Home from './pages/MainPage/Home/Home';
 import Login from './pages/MainPage/Login/Login';
-import Services from './pages/MainPage/Services/Services';
 import UserDashboard from "./pages/Patient/UserDashboard/UserDashboard";
 import UserProfile from './pages/Patient/UserProfile/UserProfile';
 import Appointments from './pages/Patient/Appointments/Appointments';
@@ -34,6 +33,7 @@ import DrSettings from './pages/Doctor/Settings/DrSettings';
 import Profile from './pages/Doctor/Profile/Profile';
 import DrAppointments from './pages/Doctor/Appointments/DrAppointments';
 import DrPrescriptions from './pages/Doctor/DrPrescriptions/DrPrescriptions';
+import About from './pages/MainPage/About/About';
 
 const App = () => {
   
@@ -47,7 +47,7 @@ const App = () => {
           <Switch>
             
             <Route path = "/sign-in" component = {Login} />
-            <Route path = "/services" component = {Services} />
+            <Route path = "/about" component = {About} />
 
             {/* Routing Patient's Pages */}
 

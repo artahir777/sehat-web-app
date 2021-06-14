@@ -15,7 +15,7 @@ const Services = () => {
                         {
                             services.map( (item, index) => {
                                 return (
-                                    <Card
+                                    <Card className = "card"
                                     imgSize = "small"
                                     image = {<img src = {item.imgUrl} />}
                                     title = { <h3> {item.title} </h3> }
