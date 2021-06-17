@@ -12,10 +12,10 @@ const About = () => {
                 <h1 className = "heading-about" >About Us</h1>
                 <Fade bottom >
                     <div className="about">
-                    <h1>What is SEHAT?</h1>
+                        <h1>What is SEHAT?</h1>
                         <p>
-                        <span className = "sehat" >SEHAT (Smart &amp; Economical Healthcare using Advanced Technology) </span> 
-                        is developed for the inexpensive consultancy about your health monitoring
+                        <span className = "sehat" >SEHAT (Smart &amp; Economical Healthcare using Advanced
+                         Technology) </span>is developed for the inexpensive consultancy about your health monitoring
                         &amp; treatment of diseases while at home from the well known, 
                         reliable, reputed and experienced medical doctors.
                         </p>
@@ -26,7 +26,8 @@ const About = () => {
                         <div className="features">
                             <h1>Highlights</h1>
                             <ul>
-                                <li> <CheckOutlined/> No chance of fake or incompetent doctor due to the strict policy</li>
+                                <li> <CheckOutlined/> No chance of fake or incompetent doctor 
+                                due to the strict policy</li>
                                 <li> <CheckOutlined/> 24/7 round the clock service</li>
                                 <li> <CheckOutlined/> Face to face chatting</li>
                                 <li> <CheckOutlined/> Medical history of the patient is maintained and 

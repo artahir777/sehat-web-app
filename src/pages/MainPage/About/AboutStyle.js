@@ -48,7 +48,8 @@ const AboutStyle = styled.div`
         align-items: flex-start;
         justify-content: center;
         .features, .future-work{
-            max-width: 50%;
+            margin: 20px auto;
+            width: 45%;
             ul{
                 margin: auto 20px;
                 list-style-type: none;
@@ -58,6 +59,24 @@ const AboutStyle = styled.div`
                     font-size: 16px;
                     margin: 10px;
                 }
+            }
+        }
+    }
+    @media( max-width: 600px ){
+        .heading-about{
+            left: 20%;
+        }
+        .about{
+            align-self: stretch;
+            padding: 20px;
+        }
+        .details{
+            display: flex;
+            flex-direction: column;
+            
+            .features, .future-work{
+                width: 100%;
+
             }
         }
     }

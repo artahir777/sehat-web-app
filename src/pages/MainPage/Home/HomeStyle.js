@@ -24,13 +24,15 @@ const HomeStyle = styled.div`
         .content{
             h1{
                 font-size: 36px;
+                align-self: stretch;
             }
             display: flex;
             flex-direction: column;
             margin: auto;
             align-items: center;
-            padding: 200px;
+            padding: 200px 50px;
             .buttons{
+                align-self: center;
                 display: flex;
                 flex-direction: row;
             }
@@ -61,15 +63,15 @@ const HomeStyle = styled.div`
     .section{
         min-height: 100vh;
         margin: 20px auto;
-        padding: 50px 30px 0px;
         display: flex;
         flex-direction: column;
         .top{
+            margin: auto;
             display: flex;
             justify-content: space-evenly;
             align-items: center;
             .text{
-                max-width: 50%;
+                width: 50%;
                 display: flex;
                 flex-direction: column;
                 align-items: center;
@@ -134,15 +136,31 @@ const HomeStyle = styled.div`
     }
     }
 
-    @media (max-width: 768px){
+    @media (max-width: 600px){
         .wrapper{
             .cover{
             .content{
+                padding: 200px 25px;
                 width: 100%;
                 display: flex;
                 flex-direction: column;
                 align-items: stretch;
                 
+            }
+        }
+        .section{
+            .top{
+                display: flex;
+                flex-direction: column-reverse;
+                align-content: center;
+                row-gap: 10px;
+                .text{
+                    width: 100%;
+                    align-items: stretch;
+                    h2{
+                        align-self: center;
+                    }
+                }
             }
         }
         .services{

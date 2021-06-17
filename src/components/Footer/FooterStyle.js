@@ -45,7 +45,7 @@ const FooterStyle = styled.div`
             }
         }
     }
-    @media (max-width: 768px)
+    @media (max-width: 600px)
     {
         .footer{
             .footer-top{

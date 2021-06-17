@@ -1,6 +1,9 @@
 import styled from "styled-components";
 
 const NavbarStyle = styled.div`
+    .side-menu{
+        display: none;
+    }
     .Navbar{
     height: 80px;
     display: flex;
@@ -20,8 +23,26 @@ const NavbarStyle = styled.div`
             height: auto;
         }
     }
-
+    .hamburger{
+        padding: 20px 10px;
+        font-size: 25px;
+        color: #acacac;
+        position: absolute;
+        right: 20px;
+        border: none;
+        border-radius: 25%;
+        display: none;
+    }
+    .hamburger:hover{
+        background-color: #eeeeee;
+        color: #3aadba;
+        cursor: pointer;
+        transition: 0.3s;
+    }
     .Navbar-Items{
+        .closebtn{
+            display: none;
+        }
         margin: auto 20px;
         a:hover{
             color: #f1f1f1;
@@ -29,7 +50,7 @@ const NavbarStyle = styled.div`
 
 
         ul{
-            height: 50px;
+            /* height: 50px; */
             li{
                 box-sizing: border-box;
                 height: 100%;
@@ -61,6 +82,41 @@ const NavbarStyle = styled.div`
                     width: 80px;
                     height: auto;
                 }
+            }
+            .hamburger{
+                display: inline-block;
+                padding: 5px;
+                margin: 15px auto;
+            }
+            .Navbar-Items{
+                .closebtn{
+                display: ${props => props.menuOpen ? "block" : "none"};
+                position: absolute;
+                top: 0;
+                right: 10px;
+                font-size: 16px;
+                margin-left: 50px;
+                color: #333333;
+                cursor: pointer;
+            }
+            display: ${props => props.menuOpen ? "block" : "none"};
+            flex-direction: column;
+            z-index: 3;
+            margin: 0;
+            align-items: center;
+            justify-content: space-evenly;
+            background-color: #f1f1f1;
+            position: absolute;
+            width: 100%;
+            top: 80px;
+            left: 0;
+            padding: 8px;
+            box-sizing: border-box;
+            ul {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
             }
         }
     }

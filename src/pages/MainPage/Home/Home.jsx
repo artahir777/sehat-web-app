@@ -57,7 +57,7 @@ const Home = () => {
                 </div>
                 
                 <Section Id = "about-SEHAT" heading = "What is SEHAT" 
-                text = {<div> <span className = "sehat" > SEHAT (Smart &amp; Economical Healthcare using Advanced Technology)</span>
+                text = {<div> <span className = "sehat" > SEHAT (Smart &amp; Economical Healthcare using Advanced Technology) </span>
                     is a complete solution to all your medical needs. 
                     Find a doctor online and Consult now! </div>}
                     image = {<img src="/images/logo.png" alt="SEHAT Logo" />}

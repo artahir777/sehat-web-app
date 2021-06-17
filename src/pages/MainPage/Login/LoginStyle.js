@@ -3,7 +3,7 @@ import styled from "styled-components";
 const LoginStyle = styled.div`
     .bg-image{
         background-image: url("/images/backgrounds/bg-hospital-03.jpg");
-        height: 700px;
+        min-height: 100vh;
         filter: blur(4px);
         -webkit-filter: blur(4px);
         
@@ -20,12 +20,23 @@ const LoginStyle = styled.div`
             top: 100px;
             left: 30%;
             z-index: 2;
-            width: 30%;
+            width: 40%;
             padding: 50px 20px;
             display: flex;
             flex-direction: column;
             align-items: center;
         }
+    
+    @media(max-width: 600px){
+        .bg-image{
+            height: 1000px;
+        }
+        .tabs{
+            top: 200px;
+            left: 5%;
+            width: 90%;
+        }
+    }
     
 `
 

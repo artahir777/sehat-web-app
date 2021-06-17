@@ -1,5 +1,5 @@
 import * as ActionList from "./ActionsList";
-import SEHAT from "../../api/SEHAT";
+import SEHAT from "../../API/SEHAT";
 import { toast } from "react-toastify";
 
 const SUCCESS = (msg) => {
