@@ -17,7 +17,7 @@ const HomeStyle = styled.div`
 
     .cover{
         background-image: url("/images/backgrounds/cover 3.jpg");
-        height: 90vh;
+        min-height: 100vh;
         background-size: cover;
         text-align: center;
         color: white;
@@ -59,36 +59,36 @@ const HomeStyle = styled.div`
         }
     }
     .section{
-        height: 100vh;
+        min-height: 100vh;
         margin: 20px auto;
         padding: 50px 30px 0px;
         display: flex;
         flex-direction: column;
         .top{
             display: flex;
-        justify-content: space-evenly;
-        align-items: center;
-        .text{
-            max-width: 50%;
-            display: flex;
-            flex-direction: column;
+            justify-content: space-evenly;
             align-items: center;
-            
-            justify-content: space-around;
-            .section-heading{
-                font-size: 24px;
+            .text{
+                max-width: 50%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                
+                justify-content: space-around;
+                .section-heading{
+                    font-size: 24px;
+                }
+                p{
+                    padding: 10px 40px;
+                    font-size: 20px;
+                }
             }
-            p{
-                padding: 10px 40px;
-                font-size: 20px;
-            }
-        }
-        img{
-            max-width: 300px;
-            height: auto;
-            margin: auto;
+            img{
+                max-width: 300px;
+                height: auto;
+                margin: auto;
 
-        }
+            }
         }
         .scroll-btn{
             margin: auto;
@@ -133,7 +133,27 @@ const HomeStyle = styled.div`
         justify-content: center;
     }
     }
-    
+
+    @media (max-width: 768px){
+        .wrapper{
+            .cover{
+            .content{
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: stretch;
+                
+            }
+        }
+        .services{
+            .services-grid{
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+        }
+    }
+
 `
 
 export default HomeStyle;

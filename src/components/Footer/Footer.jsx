@@ -9,8 +9,10 @@ const Footer = () => {
                 <div className="footer-top">
                     <div className="about">
                         <h2>About Us</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur,
-                        adipisicing elit. Sint, dignissimos illum? Fugiat assumenda totam eaque.</p>
+                        <p>SEHAT (Smart & Economical Healthcare using Advanced Technology) is 
+                            developed for the inexpensive consultancy about your health monitoring & 
+                            treatment of diseases while at home from the well known, reliable, 
+                            reputed and experienced medical doctors.</p>
                     </div>
                     <div className="quick-links">
                         <h2>Quick Links</h2>

@@ -17,10 +17,10 @@ const FooterStyle = styled.div`
                 border-bottom: 1px solid #eeeeee;
             }
             .about{
-                max-width: 35%;
+                width: 35%;
             }
             .quick-links .contact-info {
-                max-width: 30%;
+                width: 30%;
             }
             ul{
                 list-style-type: none;
@@ -42,6 +42,31 @@ const FooterStyle = styled.div`
             .logo{
                 display: inline-block;
                 margin-left: 50px;
+            }
+        }
+    }
+    @media (max-width: 768px)
+    {
+        .footer{
+            .footer-top{
+                display: block;
+                /* flex-direction: column; */
+                .about, .quick-links, .contact-info{
+                    width: 100%;
+                    display: block;
+                }
+            }
+            .footer-bottom{
+                display: flex;
+                flex-direction: column;
+                .copyright{
+                    align-self: stretch;
+                    margin: 10px;
+                }
+                .logo{
+                    align-self: flex-end;
+                    margin: 0px 20px;
+                }
             }
         }
     }
